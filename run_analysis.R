@@ -38,6 +38,5 @@ rm(activity.labels, test.activities, test.data, test.dt, test.subjects,
 sub.acc.summary <- dataset.dt %>%
     group_by(subject, activity) %>% summarise_all(mean)
 
-#writes the output tables to working directory
-write.table(dataset.dt, file = "dataset.txt", row.names = F)
-write.table(sub.acc.summary, file = "summary.txt", row.names = F)
+#writes the output table to working directory
+write.table(sub.acc.summary, file = "data.txt", row.names = F)

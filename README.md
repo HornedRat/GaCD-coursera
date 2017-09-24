@@ -10,8 +10,7 @@ To run the analysis, working directory must contain a folder named "UCI HAR Data
 ## How to use the script
 
 The user can run the script all at once. The script will create two files in the working directory:
-* dataset.txt - a tidy dataset, containing the means and standard deviations for each measurement
-* summary.txt - a mean for every measurement for each subject and activity
+* data.txt - a mean for every measurement for each subject and activity
 
 ## What does the script do
 
@@ -22,4 +21,4 @@ The user can run the script all at once. The script will create two files in the
 5. Recodes the activities as a factor with proper levels
 6. Selects the columns of interest: mean and standard deviation of all measurements
 7. Creates a summary: mean of all the selected measurements for each subjects and activity
-8. Writes the dataset and summary to working directory
+8. Writes the data created in previous step to working directory
